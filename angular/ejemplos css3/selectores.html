@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores</title>
+    <style>
+        /*Seleccionamos por comienzo del valor de atributo*/
+        a[href^= "nov"]{ color: red;}
+
+        /*Seleccionamos por final del valor de atributo*/
+        a[href$= "ews"]{ text-transform: uppercase;}
+
+        /*Seleccionamos por contenido del valor de atributo*/
+        a[href*= "tre"]{ font-size: 23px;}
+
+        /*Seleccionamos la primera linea de un parrafo*/
+        p::first-line { color: green;}
+
+        /*Seleccionamos el texto enfatizado*/
+        p::selection { background : deeppink; color: blue;}
+
+         /*Seleccionamos la primera letrao*/
+        p::first-letter { font-size:40px;}
+
+
+    </style>
+
+</head>
+<body>
+<!--barra de navegacion-->
+<nav>
+    <a href="novedades">Novedades</a>
+    <a href="entrevistas">Entrevistas</a>
+    <a href="reviews">Reviews</a>
+</nav>
+
+<div>
+    <!--parrafo-->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget nisl lacus.
+        Aliquam non purus vitae sem maximus efficitur. Ut consectetur non odio et finibus.
+        Nullam pulvinar elit vitae leo ultricies, ac malesuada sem egestas. Sed vulputate rutrum leo id mollis.
+        Duis leo est, tempor sit amet iaculis eget, pharetra vel ante. Fusce placerat, libero in vulputate dapibus,
+        ligula nulla euismod tortor, a venenatis sapien arcu non sapien. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia Curae; Integer luctus ipsum iaculis feugiat hendrerit.
+        Duis interdum sed dolor ac lacinia. Donec vitae urna nisl. Integer cursus congue purus ac vehicula.
+        Proin et risus nec libero luctus pellentesque.
+
+        Cras non augue in libero aliquam tristique. Vivamus ornare tincidunt elementum.
+        Vestibulum sed venenatis quam, ut semper dui. Sed porttitor at nibh ut facilisis. Morbi tincidunt tortor dignissim
+        nibh luctus, non suscipit nisl eleifend. Aenean lorem quam, porttitor sit amet fringilla nec,
+        porta eget metus. Integer a ultricies nunc, pellentesque interdum neque. Nunc tristique vel nisi mattis blandit.
+        Morbi in pellentesque nulla.
+    </p>
+
+</div>
+</body>
+</html>
