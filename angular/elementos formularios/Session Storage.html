@@ -8,7 +8,7 @@
 
 <script>
 
-    //Session Storage
+    //Session Storage (solo almacena por session)
 
     //preguntamos si localSotrage lo soporta el navegador
     if(typeof (Storage)!=="undefined"){
@@ -16,7 +16,7 @@
         //local storage
 
         //escribimos un valor en la session
-        sessionStorage.setItem("valorSession", "soy un valor almacenado en sessionStorage");
+        sessionStorage.setItem("valorSession", "soy un valor almacenado en sessionStorage"); // si comentas esta linea y refrescas navegador se elimina el valor siendo a null
 
         //recogemos el valor del almacén de session. -- localStorage.getItem("valorLocal");--
         var mensajeEnSession = sessionStorage.getItem("valorSession");
