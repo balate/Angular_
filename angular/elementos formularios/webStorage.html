@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Storage</title>
+</head>
+<body>
+
+    <script>
+
+        //Local Storage
+
+        //preguntamos si localSotrage lo soporta el navegador
+        if(typeof (localStorage)!=="undefined"){
+
+            //local storage
+
+            //escribimos un valor en el almacen
+            localStorage.setItem("valorLocal", "soy un valor almacenado en localStorage");
+
+            //recogemos el valor del almacén local. -- localStorage.getItem("valorLocal");--
+            var mensajeEnLocal = localStorage.getItem("valorLocal");
+            //lo hemos alacenado en una variable (var mensajeEnLocal) y lo mostramos por alert
+            alert(mensajeEnLocal);
+        }else{
+
+            alert("localSotrage No soportado por el navegador")
+        }
+
+    </script>
+</body>
+</html>

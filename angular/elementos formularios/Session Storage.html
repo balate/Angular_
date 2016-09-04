@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session Storage</title>
+</head>
+<body>
+
+<script>
+
+    //Session Storage
+
+    //preguntamos si localSotrage lo soporta el navegador
+    if(typeof (Storage)!=="undefined"){
+
+        //local storage
+
+        //escribimos un valor en la session
+        sessionStorage.setItem("valorSession", "soy un valor almacenado en sessionStorage");
+
+        //recogemos el valor del almacén de session. -- localStorage.getItem("valorLocal");--
+        var mensajeEnSession = sessionStorage.getItem("valorSession");
+        //lo hemos alacenado en una variable (var mensajeEnLocal) y lo mostramos por alert
+        alert(mensajeEnSession);
+    }else{
+
+        alert("sessionSotrage No soportado por el navegador")
+    }
+
+</script>
+</body>
+</html>
